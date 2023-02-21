@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input class="display">
+
+        
+        <div class="buttons">
+            <div class="row1  rows flex">
+                <button class="secondary-color" onclick="addToDisplay('AC')">AC</button>
+                <button class="secondary-color" onclick="addToDisplay('()')">()</button>
+                <button class="secondary-color" onclick="addToDisplay('%')">%</button>
+                <button onclick="addToDisplay('/')"class="operation">/</button>
+            </div>
+            <div class="row2  rows flex">
+                <button onclick="addToDisplay('7')">7</button>
+                <button onclick="addToDisplay('8')">8</button>
+                <button onclick="addToDisplay('9')">9</button>
+                <button onclick="addToDisplay('*')"class="operation">*</button>
+            </div>
+            <div class="row3  rows flex">
+                <button onclick="addToDisplay('4')">4</button>
+                <button onclick="addToDisplay('5')">5</button>
+                <button onclick="addToDisplay('6')">6</button>
+                <button onclick="addToDisplay('-')"class="operation">-</button>
+            </div>
+            <div class="row4  rows flex">
+                <button onclick="addToDisplay('1')">1</button>
+                <button onclick="addToDisplay('2')">2</button>
+                <button onclick="addToDisplay('3')">3</button>
+                <button onclick="addToDisplay('+')"class="operation">+</button>
+            </div>
+
+            <div class="row4  rows flex">
+                <button onclick="addToDisplay('0')">0</button>
+                <button onclick="addToDisplay('.')">.</button>
+                <button onclick="addToDisplay('Back')"class="operation">Back</button>
+                <button onclick="addToDisplay('=')"class="operation eval">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
